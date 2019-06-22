@@ -44,7 +44,7 @@ for:
       only:
         - CYG_ROOT: C:\cygwin64
     after_build:
-      - 7z a asterix.zip /cygdrive/c/projects/install/*.*
+      - 7z a asterix.zip C:\projects\croatiacontrolltd-asterix-win-exe\asterix\install\*.*
     artifacts:
       - path: asterix.zip
         name: artifacts-all     
