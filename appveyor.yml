@@ -44,7 +44,7 @@ for:
       only:
         - CYG_ROOT: C:\cygwin64
     after_build:
-      - 7z a asterix.zip C:\projects\croatiacontrolltd-asterix-win-exe\asterix\install\*.*
+      - 7z a asterix.zip C:\projects\croatiacontrolltd-asterix-win-exe\asterix\install\*.* C:\cygwin64\bin\*.dll
     artifacts:
       - path: asterix.zip
         name: artifacts-all     
@@ -54,7 +54,7 @@ for:
       only:
         - CYG_ROOT: C:\cygwin    
     after_build:
-      - 7z a asterix32.zip C:\projects\croatiacontrolltd-asterix-win-exe\asterix\install\*.*
+      - 7z a asterix32.zip C:\projects\croatiacontrolltd-asterix-win-exe\asterix\install\*.* C:\cygwin\bin\*.dll
     artifacts:
       - path: asterix32.zip
         name: artifacts32-all  
